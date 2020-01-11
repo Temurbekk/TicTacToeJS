@@ -3,10 +3,12 @@
 *::before {
   box-sizing: border-box;
 }
+
 :root {
   --cell-size: 100px;
-  --mark-size: cal(var(--cell-size) * 0.9);
+  --mark-size: calc(var(--cell-size) * 0.9);
 }
+
 body {
   margin: 0;
 }
@@ -63,6 +65,7 @@ body {
 .cell.circle::before {
   background-color: black;
 }
+
 .board.x .cell:not(.x):not(.circle):hover::before,
 .board.x .cell:not(.x):not(.circle):hover::after,
 .board.circle .cell:not(.x):not(.circle):hover::before {
